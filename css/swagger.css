@@ -1,0 +1,324 @@
+/*****************CSS *****************/
+
+/**/
+/***************** GENERAL ELEMENTS *****************/
+
+html {
+  background:
+    repeating-linear-gradient(75deg, #fff, #efefef 3px, #000 3px);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+body {
+  margin: 3rem auto; padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Oxanium;
+  letter-spacing: -0.04em;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #29856c;
+  text-decoration: none;
+}
+
+#wrapper {
+  width: 69%;
+  margin: auto;
+}
+
+/**/
+/***************** NAV TOPBAR & FOOTER *****************/
+
+nav {
+  position: fixed; top: 0; left: 0; z-index: 1;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px dotted #333;
+  font-family: Dosis;
+  font-size: 0;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0; padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0; padding: 0 7px;
+  border-right: 1px dotted #333;
+  font-size: 1.1rem;
+}
+
+nav li:hover {
+  background-color: #c9f9ed;
+  color: #333;
+}
+
+.socialMenu {
+  display: inline-block;
+  float: right;
+}
+
+.socialMenu li {
+  border-left: 1px dotted #333;
+  border-right: 0;
+}
+
+footer {
+  position: fixed; bottom: 0; left: 0; z-index: 1;
+  width: 100%;
+  background: #fff;
+  text-align: right;
+  border-top: 1px dotted #333;
+  line-height: 3rem;
+  font-family: Dosis;
+}
+
+nav p, footer p  {
+  margin: 0 14px;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/***************** PAGE CONTENT *****************/
+
+aside {
+  float: left;
+  text-align: right;
+  width: 30%;
+  margin-top: 14px;
+}
+
+aside img {
+  max-width: 90%;
+  border-bottom: 1px dotted #bf0808;
+}
+
+#wrapper {
+  float: left;
+  width: 66%;
+  padding: 14px 1% 14px 1%;
+}
+
+header h1, header h2 {
+  display: inline;
+  line-height: 1em;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  margin-right: 0.1rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header p {
+  margin-top: 1px;
+}
+
+main {
+  float: left;
+  margin: 14px 1% 3rem 1%;
+}
+
+main figure {
+  display: inline-block;
+  float: left;
+  width: 23%;
+  margin: auto 1%;
+}
+
+main img, main figcaption {
+  max-width: 90%;
+}
+
+section {
+  background: rgb(255, 255, 255, 0.7);
+  padding: 7px 2%;
+  border-top: 1px dotted #bf0808;
+  border-right: 1px dotted #bf0808;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.blog > section {
+  margin: 7px 1%;
+}
+
+.blog > section:hover {
+  background-color: #c9f9ed;
+}
+
+.blog img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  border: 1px dotted #333;
+}
+
+.more {
+  display: none;
+}
+
+.active .more {
+  display: block;
+}
+
+/**/
+/***************** MINOR FORMATS *****************/
+
+.purple {
+  color: #e51470;
+}
+
+.redButton {
+  background-color: #c9f9ed;
+  border: 1px dotted #333;
+  font-variant: small-caps;
+}
+
+.fab {
+  vertical-align: middle;
+}
+
+.open, .close {
+  display: none;
+}
+
+details summary, details ul, details ol, details p {
+  font-family: Dosis;
+}
+
+details ul, details p {
+  margin: 4px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.pretty {
+  font-variant: small-caps;
+  font-size: 1.3rem;
+  background: #29856c;
+  color: #f2f3fb;
+  padding: 0 14px;
+  border-bottom-left-radius: 14px;
+}
+
+/**/
+/***************** RESPONSIVE DESIGN *****************/
+
+@media all and (max-width: 768px) {
+  aside {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  aside img {
+    max-width: 30%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  aside p {
+    margin: 0;
+    font-size: 0.7em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  aside button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header, main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #wrapper {
+    width: 97%;
+    margin-top: 14px;
+    float: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header h1, header h2, header p {
+    display: block;
+    margin: 3px auto;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  nav {
+    background: none;
+    border-bottom: 0px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  nav ul li {
+    background: #fff;
+    border-bottom: 1px dotted #333;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  nav ul li.wide:nth-child(3) {
+    border-top: 1px dotted #333;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .open {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .wide, .close {
+    display: none;
+    width: 100vw;
+  }
+}
+
+@media all and (max-width: 768px) {
+.blog {
+  display: block;
+  }
+}
