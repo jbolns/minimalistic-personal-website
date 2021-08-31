@@ -5,6 +5,8 @@
   <meta name="description" content="Personal Website.">
   <meta name="keywords" content="HTML, CSS, JS">
   <meta name="author" content="Jose A Bolanos">
+  <meta property="og:image" content="images/og-favicon.png">
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Oxanium:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swagger.css">
@@ -14,7 +16,7 @@
   <title>Personal Website Demo.</title>
 </head>
 
-<body onload="loadReload()" onresize="centrao()">
+<body onload="loadReload()">
 
   <nav>
     <ul class="mainMenu">
@@ -22,26 +24,25 @@
       <li class="close" onclick="closeMenu()"><i class="fas fa-window-close"></i></li>
       <li class="wide"><a href="#home" onclick="linky(this.href)">Home</a></li>
       <li class="wide"><a href="#books" onclick="linky(this.href)">Books</a></li>
-      <li class="wide"><a href="#blog" onclick="linky(this.href)">Blog</a></li>
+      <li class="wide"><a href="#services" onclick="linky(this.href)">Services</a></li>
     </ul>
     <ul class="socialMenu">
-      <li><a href="#"><i class="fab fa-instagram fa-2x"></i><span class="hidden">Instagram</span></a></li>
-      <li><a href="#"><i class="fab fa-linkedin fa-2x"></i><span class="hidden">LinkedIn</span></a></li>
-      <li><a href="https://github.com/jbolns" target="_blank"><i class="fab fa-github fa-2x"></i><span class="hidden">GitHub</span></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i><span class="hidden">Instagram</span></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i><span class="hidden">LinkedIn</span></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-github fa-2x"></i><span class="hidden">GitHub</span></a></li>
     </ul>
   </nav>
 
   <aside>
-    <img id="avatar" src="images/avatar.png" alt="Picture of Jose">
-    <p>Photo by <a href="https://unsplash.com/@grimmwwald">Syarafina Yusof</a> on <a href="https://unsplash.com/">Unsplash</a></p>
-    <button class="redButton" onclick="iLikeYou()">Do not click this button!</button>
+    <img id="avatar" src="images/avatar.png" alt="Main Website Picture">
+    <button class="greenButton" onclick="iLikeYou()">Do not click this button!</button>
   </aside>
 
   <div id="wrapper">
   </div>
 
   <footer>
-    <p class="smallText">&copy; <span id="copyR"></span> Jose A Bolanos. <span class="purple">#PuraVida #Tuanis</span>.</p>
+    <p class="smallText"><span class="purple">#PuraVida #Tuanis</span>.</p>
     <script>cR();</script>
   </footer>
 
